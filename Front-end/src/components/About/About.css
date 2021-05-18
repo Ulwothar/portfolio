@@ -2,17 +2,29 @@
     .about-page {
         position: absolute;
         top: 18vh;
-        left: 28vw;
+        left: 27vw;
         background-color: black;
+        border: 5px solid  black;
         border-radius: 50%;
         width: 40vw;
         height: 70vh;
-        color: rgb(25, 50, 190);
+        color: rgb(0, 120, 255);
         text-align: center;
         overflow-wrap: break-word;
         justify-content: center;
         display: flex;
         align-items: center;
         padding: 2em 5em 2em 5em;
+        box-shadow: 0 0 150px rgb(0, 120, 255);
+        transition: box-shadow 1s;
     }
+
+    .about-page:hover {
+        box-shadow: 0 0 350px red;
+    }
+
+    .about-page h2 {
+        font-size: 1.5em;
+    }
+
 }
