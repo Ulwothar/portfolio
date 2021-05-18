@@ -6,6 +6,11 @@
     border:rgb(0, 120, 255) solid 2px;
     width: 12vw;
     border-radius: 0 15% 0 15%;
+    transition: border-color 1s;
+}
+
+.main-menu:hover {
+    border-color: red;
 }
 
 .main-menu ul {
@@ -19,11 +24,21 @@
     font-size: 2.5em;
     font-family: 'Niconne';
     margin-left: -7%;
+    transition: color 1s;
+}
+
+.main-menu a:hover {
+    color: red;
 }
 
 .main-menu img {
     width: 30px;
     height: 30px;
-    margin-left: 1em;
 }
+}
+
+.image-link{
+    position: relative;
+    display: inline-block;
+    margin: 1em;
 }

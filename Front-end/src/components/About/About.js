@@ -6,11 +6,12 @@ const About = () => {
     <>
       <div className="about-page">
         <h2>
-          The standard JavaScript way to select an element is using
-          document.getElementById("Id"), which is what the following examples
-          use - you can of course obtain elements in other ways, and in the
-          right situation may simply use this instead - however, going into
-          detail on this is beyond the scope of the answer.
+          My professional goal is to become a software developer. I’ve always
+          been interested in coding, however I have never actually worked in IT.
+          I am really dedicated to learning and improving my skills as well as
+          expanding them. Also, if I’m stuck at something, I’m not afraid to ask
+          more experienced people for help, if google, documentation and
+          Stackoverflow are not enough.
         </h2>
       </div>
     </>

@@ -28,24 +28,28 @@ const MainMenu = () => {
             </NavLink>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/mateusz-krupa-691774124/"
-              target="_blank"
-              rel="noreferrer">
-              <img
-                src="https://img-premium.flaticon.com/png/512/174/174857.png?token=exp=1621369784~hmac=6a65f3b1ad679d56b0cfd53f6501ffbd"
-                alt="My linkedIn profile"
-              />
-            </a>
-            <a
-              href="https://github.com/Ulwothar"
-              target="_blank"
-              rel="noreferrer">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
-                alt="My github page"
-              />
-            </a>
+            <div className="image-link">
+              <a
+                href="https://www.linkedin.com/in/mateusz-krupa-691774124/"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png"
+                  alt="My linkedIn profile"
+                />
+              </a>
+            </div>
+            <div className="image-link">
+              <a
+                href="https://github.com/Ulwothar"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
+                  alt="My github page"
+                />
+              </a>
+            </div>
           </li>
         </ul>
       </span>
