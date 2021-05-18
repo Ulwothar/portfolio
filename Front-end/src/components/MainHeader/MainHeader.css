@@ -1,0 +1,57 @@
+@media screen and (min-width: 1250px) {
+    .main-header {
+    color: rgb(202, 230, 236);
+    font-size: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    /* border: black solid 2px; */
+    padding-top: 0px;
+    padding-left: 0px;
+    margin: 0;
+    width: 80%;
+    max-height: 14vh;
+    min-height: 7rem;
+    text-align: left;
+    /* background-color: rgb(86, 97, 109); */
+    background: linear-gradient(90deg, rgb(86, 97, 109) 10%, rgb(86, 97, 109) 20%, rgb(0, 0, 0));
+    border-radius: 0 0 50px 0;
+    pointer-events: none;
+}
+
+.main-header::before {
+    content: '';
+    width: 4vw;
+    height: 4vh;
+    bottom: -4vh;
+    background-color: transparent;
+    border-radius: 50% 0 0 0;
+    /* display: block; */
+    /* margin-top: 16vh; */
+    position: absolute;
+    box-shadow: 0 -25px 0 0 rgb(86, 97, 109);
+}
+
+/* .main-header::after {
+    content: '';
+    width: 4vw;
+    height: 4vh;
+    bottom: -4vh;
+    right: 0;
+    background-color: transparent;
+    border-radius: 0 50% 0 0;
+    /* display: block; */
+    /* margin-top: 16vh; */
+    /* position: absolute;
+    box-shadow: 0 -25px 0 0 lightslategrey;
+}  */
+
+
+.main-header h1 {
+    margin-top: -0.1em;
+    right: 25vw;
+    position: fixed;
+    font-family: 'Fredericka the Great', 'Algerian';
+}
+
+}

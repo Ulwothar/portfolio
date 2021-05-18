@@ -2,13 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
-import MainHeader from './components/MainHeader/MainHeader';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <Router>
-      <MainHeader />
-    </Router>
+    <main>
+      <Router>
+        <Layout />
+      </Router>
+    </main>
   );
 }
 
