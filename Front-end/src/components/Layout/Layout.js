@@ -3,13 +3,15 @@ import './Layout.css';
 
 import MainHeader from '../MainHeader/MainHeader';
 import About from '../About/About';
+import Projects from '../Projects/Projects';
 
 const Layout = (props) => {
   return (
     <div className="main-layout">
-      <MainHeader />
       <div className="content-container">
+        <MainHeader />
         <About />
+        <Projects />
       </div>
     </div>
   );

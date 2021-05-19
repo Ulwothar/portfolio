@@ -1,0 +1,15 @@
+.projects-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    top: 150vh;
+    left: 30vw;
+    height: 70vh;
+    width: 60vw;
+    margin: auto;
+}
+
+.project img {
+    height: 500px;
+    width: 500px;
+}
