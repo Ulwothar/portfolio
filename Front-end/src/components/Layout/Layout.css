@@ -3,15 +3,17 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(135deg, black 35%, rgb(184, 190, 192) 50%, black 70%)
+    background-image: linear-gradient(135deg, black 35%, rgb(184, 190, 192) 50%, black 70%);
+    overflow-y: hidden;
 }
 
-/* .content-container {
+.content-container {
     position: absolute;
-    top: 20vh;
-    left: 15vw;
-    width: 70vw;
-    height: 75vh;
-    background: rgba(255, 255, 255, 0.15);
-} */
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.0);
+    overflow-y: scroll;
+}
 }
