@@ -6,7 +6,7 @@ import MainMenu from '../MainMenu/MainMenu';
 const MainHeader = () => {
   return (
     <>
-      <header className="main-header">
+      <header className="main-header" id="main-header">
         <h1>Mateusz Krupa</h1>
       </header>
       <MainMenu />
