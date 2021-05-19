@@ -1,6 +1,14 @@
 import React from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import './MainMenu.css';
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -80;
+  console.log(yCoordinate);
+  el.scrollTo(0, 0);
+};
 
 const MainMenu = () => {
   return (
@@ -8,14 +16,22 @@ const MainMenu = () => {
       <span className="main-menu">
         <ul>
           <li>
-            <NavLink to="/" exact>
+            <NavHashLink
+              to="#about"
+              activeClassName="selected"
+              smooth="true"
+              activeStyle={{ color: 'red' }}>
               About
-            </NavLink>
+            </NavHashLink>
           </li>
           <li>
-            <NavLink to="/" exact>
+            <NavHashLink
+              to="#projects"
+              activeClassName="selected"
+              smooth="true"
+              activeStyle={{ color: 'red' }}>
               Projects
-            </NavLink>
+            </NavHashLink>
           </li>
           <li>
             <NavLink to="/" exact>

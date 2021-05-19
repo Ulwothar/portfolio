@@ -5,7 +5,7 @@ import Cc from '../../images/cc.jpg';
 
 const Projects = () => {
   return (
-    <div className="projects-grid">
+    <div className="projects-grid" id="projects">
       <div className="project">
         <img src={Improvement} alt="Improvement" />
       </div>

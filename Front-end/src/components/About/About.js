@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <>
+    <div id="about">
       <div className="about-page">
         <h2>
           My professional goal is to become a software developer. I’ve always
@@ -14,7 +14,7 @@ const About = () => {
           Stackoverflow are not enough.
         </h2>
       </div>
-    </>
+    </div>
   );
 };
 

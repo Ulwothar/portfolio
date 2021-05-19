@@ -8,7 +8,8 @@ import Projects from '../Projects/Projects';
 const Layout = (props) => {
   return (
     <div className="main-layout">
-      <div className="content-container">
+      <div id="top"></div>
+      <div className="content-container" id="main-layout">
         <MainHeader />
         <About />
         <Projects />
