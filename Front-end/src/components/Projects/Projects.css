@@ -1,8 +1,12 @@
-.projects-grid {
+.projects-wrapper {
     position: absolute;
+    margin-top: 100vh;
+}
+.projects-grid {
+    position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
-    top: 150vh;
+    top: 10em;
     left: 30vw;
     height: 70vh;
     width: 60vw;
