@@ -1,16 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <main>
-      <Router>
-        <Layout />
-      </Router>
-    </main>
+    <Router>
+      <main>
+        <Switch>
+          <Route path="/">
+            <Layout />
+          </Route>
+        </Switch>
+      </main>
+    </Router>
   );
 }
 

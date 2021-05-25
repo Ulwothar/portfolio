@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './MainHeader.css';
 
-import MainMenu from '../MainMenu/MainMenu';
-
 const MainHeader = () => {
+  useEffect(() => {
+    const header = document.getElementById('main-header');
+    header.classList.toggle('main-header-visible');
+  }, []);
+
   return (
     <>
       <header className="main-header" id="main-header">
         <h1>Mateusz Krupa</h1>
       </header>
-      <MainMenu />
     </>
   );
 };

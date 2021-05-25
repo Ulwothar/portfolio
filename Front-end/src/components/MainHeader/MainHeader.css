@@ -2,20 +2,29 @@
     .main-header {
     
     font-size: 3rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0px;
     padding-top: 0px;
     padding-left: 0px;
     margin: 0;
+    margin-left: -80vw;
     width: 80%;
-    max-height: 14vh;
-    min-height: 7rem;
+    height: 3em;
     text-align: left;
     background: linear-gradient(90deg, rgb(86, 97, 109) 10%, rgb(86, 97, 109) 20%, rgb(0, 0, 0));
     border-radius: 0 0 50px 0;
     pointer-events: none;
-    z-index: 50;
+    z-index: 2;
+    transition: margin 2s;
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+}
+
+.main-header-visible {
+    margin-left: 0;
 }
 
 .main-header::before {
@@ -24,16 +33,18 @@
     height: 4vh;
     bottom: -4vh;
     background-color: transparent;
-    border-radius: 50% 0 0 0;
+    border-radius: 25% 0 0 0;
     position: absolute;
     box-shadow: 0 -25px 0 0 rgb(86, 97, 109);
 }
 
 .main-header h1 {
     color: rgb(0, 120, 255);
-    margin-top: -0.1em;
-    right: 25vw;
-    position: fixed;
+    /* margin-top: -0.1em; */
+    top: -80px;
+    right: 2vw;
+    position: absolute;
+    display: inline;
     font-family: 'Fredericka the Great', 'Algerian';
     pointer-events: painted;
     transition: color 1s linear;
