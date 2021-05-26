@@ -7,10 +7,10 @@
         z-index: 5;
         opacity: 0;
         transition: opacity 2s;
-        transition-delay: 3s;
-        -webkit-transition-delay: 3s;
-        -moz-transition-delay: 3s;
-        -o-transition-delay: 3s;
+        transition-delay: 4s;
+        -webkit-transition-delay: 4s;
+        -moz-transition-delay: 4s;
+        -o-transition-delay: 4s;
     }
 
     .main-navigation-visible {
@@ -22,17 +22,17 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 7.5em;
+    padding-top: 1em;
+    height: 3em;
+    margin-top: 5.2em;
     border-radius: 0 0 15px 0;
     background-color: rgba(75, 75, 75, 0.5);
-    transition: background-color 1s;
+    transition: color 1s;
     list-style: none;
     
 }
 
-.main-menu ul {
-    list-style: none;
-}
+
 
 .main-menu a {
     text-decoration: none;
@@ -53,8 +53,8 @@
 }
 
 .main-menu img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 }
 

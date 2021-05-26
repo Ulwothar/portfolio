@@ -16,21 +16,6 @@ const aboutContent = {
 
 const About = () => {
   useEffect(() => {
-    // .about-function-declaration,
-    // .return-declaration,
-    // .about-div-begin,
-    // .about-header,
-    // .about-paragraph,
-    // .paragraph-line-one,
-    // .paragraph-line-two,
-    // .paragraph-line-three,
-    // .paragraph-line-four,
-    // .closing-paragraph,
-    // .closing-div,
-    // .closing-return,
-    // .closing-about,
-    // .exporting-about,
-    // .about-page
     const aboutPage = document.getElementById('about-page');
     aboutPage.classList.add('about-visible');
     const aboutFunctionStart = document.getElementById(
@@ -191,24 +176,3 @@ const About = () => {
 };
 
 export default About;
-
-// {aboutContent.sectionTag}
-//         <br></br>
-//         {'\u00A0'}
-//         {aboutContent.headerTag +
-//           aboutContent.title +
-//           aboutContent.closingHeaderTag}
-//         <br></br>
-//         {'\u00A0'}
-//         <p>
-//           {aboutContent.paragraphTag}
-//           <br></br>
-//           {'\u00A0'}
-//           {'\u00A0'}
-//           {aboutContent.paragraphText}
-//           <br></br>
-//           {'\u00A0'}
-//           {aboutContent.closingParagraphTag}
-//           <br></br>
-//           {aboutContent.closingSectionTag}
-//         </p>
