@@ -8,6 +8,9 @@
         opacity: 0;
         transition: opacity 2s;
         transition-delay: 3s;
+        -webkit-transition-delay: 3s;
+        -moz-transition-delay: 3s;
+        -o-transition-delay: 3s;
     }
 
     .main-navigation-visible {
@@ -19,7 +22,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 9em;
+    margin-top: 7.5em;
     border-radius: 0 0 15px 0;
     background-color: rgba(75, 75, 75, 0.5);
     transition: background-color 1s;
