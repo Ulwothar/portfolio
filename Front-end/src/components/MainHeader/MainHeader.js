@@ -10,7 +10,7 @@ const MainHeader = () => {
   return (
     <>
       <header className="main-header" id="main-header">
-        <h1>Mateusz Krupa</h1>
+        <h1>M.K.</h1>
       </header>
     </>
   );
