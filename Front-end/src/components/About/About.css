@@ -1,11 +1,11 @@
 @media screen and (min-width: 1250px) {
     #about {
         background-color: rgb(34, 34, 34); 
-        position: absolute;
-        top: 0;
+        position: relative;
+        top: -9.2em;
         height: 100vh;
         width: 100vw;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .about-page {
@@ -163,6 +163,49 @@
     .about-visible {
         visibility: visible;
         opacity: 1;
+    }
+
+    @keyframes arrow {
+        0% {color: white; font-size: 1em;}
+        12.5% {font-size: 1.5em;}
+        20% {color: yellow;}
+        25% {font-size: 1em;}
+        37.5% {font-size: 1.5em;}
+        40% {color: rgb(80, 255, 120);}
+        50% {font-size: 1em;}
+        60% {color: rgb(80, 255, 255);}
+        62.5% {font-size: 1.5em;}
+        75% {font-size: 1em;}
+        80% {color:rgb(0, 120, 255);}
+        87.5% {font-size: 1.5em;}
+        100% {color: white; font-size: 1em;}
+    }
+    .scroll-arrow a {
+        
+        margin-left: 45vw;
+        text-align: center;
+        
+        color: transparent;
+        line-height: 0.1em;
+        animation-name: arrow;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-delay: 22s;
+        cursor: default;
+    }
+
+    .scroll-arrow {
+        position: absolute;
+        display: block;
+        width: 40px;
+        margin: auto;
+        bottom: 1em;
+        left: 48%;
+    }
+
+    .scroll-arrow a {
+        text-decoration: none;
+        scroll-behavior: smooth;
     }
 
     span {

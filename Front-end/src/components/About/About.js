@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 import './About.css';
 
 const aboutContent = {
@@ -170,6 +171,12 @@ const About = () => {
           <p className="light-yellow-text">About</p>
           <p className="white-text">{' ;'}</p>
         </span>
+      </div>
+      <div className="scroll-arrow">
+        <NavHashLink to="#projects" smooth="true">
+          <p> {' ||'}</p>
+          <p>\/</p>
+        </NavHashLink>
       </div>
     </div>
   );

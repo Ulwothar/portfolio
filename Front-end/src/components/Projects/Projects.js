@@ -6,7 +6,14 @@ import Cc from '../../images/cc.jpg';
 const Projects = () => {
   return (
     <div className="projects-wrapper">
-      <h2>My Projects</h2>
+      <div className="projects-header-wrapper">
+        <h2 className="dark-blue-text">{'const '}</h2>
+        <h2 className="light-yellow-text">{'MyProjects '}</h2>
+        <h2 className="white-text">{'= '}</h2>
+        <h2 className="pink-text">{'() '}</h2>
+        <h2 className="white-text">{'=> '}</h2>
+        <h2 className="light-blue-text">{'{'}</h2>
+      </div>
       <div className="projects-grid" id="projects">
         <div className="project">
           <img src={Improvement} alt="Improvement" />
@@ -15,6 +22,7 @@ const Projects = () => {
           <img src={Cc} alt="Improvement" />
         </div>
       </div>
+      <h2 className="light-blue-text">{'}'}</h2>
     </div>
   );
 };
