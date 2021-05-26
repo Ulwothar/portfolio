@@ -10,27 +10,205 @@
 
     .about-page {
         position: relative;
-        top: 15em;
-        left: 27vw;
+        top: 12em;
+        left: 10vw;
         background-color: transparent;
-        width: 40vw;
+        width: 70vw;
         /* height: 70vh; */
         color: rgb(0, 120, 255);
         text-align: center;
         justify-content: center;
         display: flex;
-        align-items: center;
-        padding: 2em 5em 2em 5em;
-        box-shadow: 0 0 150px rgb(0, 120, 255);
-        transition: box-shadow 1s;
+        flex-direction: column;
+        text-align: left;
+        padding: 2em 2em 2em 2em;
+        border: 1px solid lightgray;
+        transition: opacity 1s;
+        transition-delay: 5s;
+        -webkit-transition-delay: 5s;
+        -moz-transition-delay: 5s;
+        -o-transition-delay: 5s;
     }
 
-    .about-page:hover {
-        box-shadow: 0 0 350px red;
+    .about-function-declaration, 
+    .return-declaration, 
+    .about-div-begin, 
+    .about-header, 
+    .about-paragraph, 
+    .paragraph-line-one, 
+    .paragraph-line-two, 
+    .paragraph-line-three, 
+    .paragraph-line-four, 
+    .closing-paragraph, 
+    .closing-div, 
+    .closing-return, 
+    .closing-about, 
+    .exporting-about,
+    .about-page {
+        opacity: 0;
     }
 
-    .about-page h2 {
-        font-size: 1.5em;
+    .about-function-declaration {
+        transition: opacity 1s;
+        transition-delay: 7s;
+        -webkit-transition-delay: 7s;
+        -moz-transition-delay: 7s;
+        -o-transition-delay: 7s;
+    }
+
+    .return-declaration {
+        transition: opacity 1s;
+        transition-delay: 8s;
+        -webkit-transition-delay: 8s;
+        -moz-transition-delay: 8s;
+        -o-transition-delay: 8s;
+    }
+
+    .about-div-begin {
+        transition: opacity 1s;
+        transition-delay: 9s;
+        -webkit-transition-delay: 9s;
+        -moz-transition-delay: 9s;
+        -o-transition-delay: 9s;
+    }
+
+    .about-header {
+        transition: opacity 1s;
+        transition-delay: 10s;
+        -webkit-transition-delay: 10s;
+        -moz-transition-delay: 10s;
+        -o-transition-delay: 10s;
+    }
+
+    .about-paragraph {
+        transition: opacity 1s;
+        transition-delay: 11s;
+        -webkit-transition-delay: 11s;
+        -moz-transition-delay: 11s;
+        -o-transition-delay: 11s;
+    }
+
+    .paragraph-line-one {
+        transition: opacity 1s;
+        transition-delay: 12s;
+        -webkit-transition-delay: 12s;
+        -moz-transition-delay: 12s;
+        -o-transition-delay: 12s;
+    }
+
+    .paragraph-line-two {
+        transition: opacity 1s;
+        transition-delay: 13s;
+        -webkit-transition-delay: 13s;
+        -moz-transition-delay: 13s;
+        -o-transition-delay: 13s;
+    }
+
+    .paragraph-line-three {
+        transition: opacity 1s;
+        transition-delay: 14s;
+        -webkit-transition-delay: 14s;
+        -moz-transition-delay: 14s;
+        -o-transition-delay: 14s;
+    }
+
+    .paragraph-line-four {
+        transition: opacity 1s;
+        transition-delay: 15s;
+        -webkit-transition-delay: 15s;
+        -moz-transition-delay: 15s;
+        -o-transition-delay: 15s;
+    }
+
+    .closing-paragraph {
+        transition: opacity 1s;
+        transition-delay: 16s;
+        -webkit-transition-delay: 16s;
+        -moz-transition-delay: 16s;
+        -o-transition-delay: 16s;
+    }
+
+    .closing-div {
+        transition: opacity 1s;
+        transition-delay: 17s;
+        -webkit-transition-delay: 17s;
+        -moz-transition-delay: 17s;
+        -o-transition-delay: 17s;
+    }
+
+    .closing-return {
+        transition: opacity 1s;
+        transition-delay: 18s;
+        -webkit-transition-delay: 18s;
+        -moz-transition-delay: 18s;
+        -o-transition-delay: 18s;
+    }
+
+    .closing-about {
+        transition: opacity 1s;
+        transition-delay: 19s;
+        -webkit-transition-delay: 19s;
+        -moz-transition-delay: 19s;
+        -o-transition-delay: 19s;
+    }
+
+    .exporting-about {
+        transition: opacity 1s;
+        transition-delay: 20s;
+        -webkit-transition-delay: 20s;
+        -moz-transition-delay: 20s;
+        -o-transition-delay: 20s;
+    }
+
+    .about-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    span p {
+        display: inline;
+        transition: font-size 1s, color 0.5s;
+        line-height: 1.2em;
+        font-size: 1.1em;;
+    }
+
+    span p:hover {
+        font-size: 1.25em;
+        color: orchid;
+        cursor: default;
+    }
+
+    .dark-blue-text {
+        color:rgb(0, 120, 255);
+    }
+
+    .light-blue-text {
+        color: rgb(140, 217, 252);
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    .pink-text {
+        color: rgb(167, 57, 218);
+    }
+
+    .light-yellow-text {
+        color: rgb(250, 250, 186);
+    }
+
+    .yellow-text {
+        color: yellow;
+    }
+
+    .grey-text {
+        color: grey;
+    }
+
+    .orange-text {
+        color: rgb(190, 102, 70);
     }
 
 }
