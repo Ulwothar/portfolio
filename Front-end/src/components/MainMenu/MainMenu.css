@@ -1,8 +1,93 @@
+.hamburger {
+    position: fixed;
+    width: 35px;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    border-color: grey;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 90%;
+    height: 5px;
+    margin: 6px auto;
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 5px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-9px, -7px);
+    -webkit-transform: rotate(45deg) translate(-9px, -7px);
+}
+
+.main-navigation {
+        position: fixed;
+        top: -83px;
+        width: 100vw;
+        margin-left: -100vw;
+        z-index: 5;
+        transition: margin-left 1s;
+    }
+
+    .main-navigation-open {
+        margin-left: 0;
+    }
+
+    .main-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding-top: 5em;
+    height: 100vh;
+    margin-top: 5.2em;
+    border-radius: 0 0 15px 0;
+    background-color: rgba(75, 75, 75, 0.9);
+    transition: color 1s;
+    list-style: none;
+    
+}
+
+
+
+.main-menu a {
+    text-decoration: none;
+    color: rgb(0, 120, 255);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.link-imitation {
+    pointer-events: none;
+}
+
+
+.main-menu img {
+    width: 25px;
+    height: 25px;
+}
+
 @media  screen and (min-width: 1250px) {
+    .hamburger {
+        display: none;
+    }
     .main-navigation {
         position: sticky;
         position: -webkit-sticky;
         top: 0;
+        margin-left: 0;
         width: 70vw;
         z-index: 5;
         opacity: 0;
