@@ -4,17 +4,30 @@ import { NavLink } from 'react-router-dom';
 import './MainMenu.css';
 
 const MainMenu = () => {
+  let nav;
+
   useEffect(() => {
-    const nav = document.getElementById('main-navigation');
+    nav = document.getElementById('main-navigation');
     nav.classList.add('main-navigation-visible');
   }, []);
+
+  const addChangeClass = () => {
+    let element = document.getElementById('hamburger');
+    element.classList.toggle('change');
+    nav.classList.toggle('main-navigation-open');
+  };
   return (
     <nav className="main-navigation" id="main-navigation">
+      <div className="hamburger" id="hamburger" onClick={addChangeClass}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
       <span className="main-menu">
         <a href="/" className="link-imitation">
           menu() ={'> {'}
         </a>
-        <li>
+        <li onClick={addChangeClass}>
           <NavHashLink
             to="#main-header"
             activeClassName="selected"
@@ -23,7 +36,7 @@ const MainMenu = () => {
             About()
           </NavHashLink>
         </li>
-        <li>
+        <li onClick={addChangeClass}>
           <NavHashLink
             to="#projects"
             activeClassName="selected"
@@ -32,17 +45,17 @@ const MainMenu = () => {
             Projects()
           </NavHashLink>
         </li>
-        <li>
+        <li onClick={addChangeClass}>
           <NavLink to="/" exact>
             Contact Me()
           </NavLink>
         </li>
-        <li>
+        <li onClick={addChangeClass}>
           <NavLink to="/" exact>
             CV()
           </NavLink>
         </li>
-        <li>
+        <li onClick={addChangeClass}>
           <div className="image-link">
             <a
               href="https://www.linkedin.com/in/mateusz-krupa-691774124/"
