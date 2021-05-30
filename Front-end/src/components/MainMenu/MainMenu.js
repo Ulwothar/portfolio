@@ -27,6 +27,7 @@ const MainMenu = () => {
         <a href="/" className="link-imitation">
           menu() ={'> {'}
         </a>
+        <hr></hr>
         <li onClick={addChangeClass}>
           <NavHashLink
             to="#main-header"
@@ -36,6 +37,7 @@ const MainMenu = () => {
             About()
           </NavHashLink>
         </li>
+        <hr></hr>
         <li onClick={addChangeClass}>
           <NavHashLink
             to="#projects"
@@ -45,17 +47,19 @@ const MainMenu = () => {
             Projects()
           </NavHashLink>
         </li>
+        <hr></hr>
         <li onClick={addChangeClass}>
           <NavLink to="/" exact>
             Contact Me()
           </NavLink>
         </li>
+        <hr></hr>
         <li onClick={addChangeClass}>
           <NavLink to="/" exact>
             CV()
           </NavLink>
         </li>
-        <li onClick={addChangeClass}>
+        {/* <li onClick={addChangeClass}>
           <div className="image-link">
             <a
               href="https://www.linkedin.com/in/mateusz-krupa-691774124/"
@@ -78,7 +82,7 @@ const MainMenu = () => {
               />
             </a>
           </div>
-        </li>
+        </li> */}
         <a href="/" className="link-imitation">
           {'}'}
         </a>

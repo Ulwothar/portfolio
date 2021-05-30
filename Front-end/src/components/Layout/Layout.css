@@ -1,4 +1,6 @@
-@media screen and (min-width: 1250px){
+
+
+/* @media screen and (min-width: 1250px){ */
     .main-layout {
     position: absolute;
     width: 100vw;
@@ -20,4 +22,4 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
-}
+/* } */
