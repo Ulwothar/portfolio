@@ -1,3 +1,255 @@
+#about {
+    /* background-color: rgb(34, 34, 34);  */
+    position: relative;
+    top: 6em;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-page {
+    position: relative;
+    background-color: transparent;
+    width: 90%;
+    color: rgb(0, 120, 255);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 2em 2em 2em;
+    transition: opacity 1s;
+    transition-delay: 5s;
+    -webkit-transition-delay: 5s;
+    -moz-transition-delay: 5s;
+    -o-transition-delay: 5s;
+}
+
+.about-function-declaration, 
+.return-declaration, 
+.about-div-begin, 
+.about-header, 
+.about-paragraph, 
+.paragraph-line-one, 
+.paragraph-line-two, 
+.paragraph-line-three, 
+.paragraph-line-four, 
+.closing-paragraph, 
+.closing-div, 
+.closing-return, 
+.closing-about, 
+.exporting-about,
+.about-page {
+    opacity: 0;
+}
+
+.about-function-declaration {
+    transition: opacity 1s;
+    transition-delay: 5s;
+    -webkit-transition-delay: 5s;
+    -moz-transition-delay: 5s;
+    -o-transition-delay: 5s;
+}
+
+.return-declaration {
+    transition: opacity 1s;
+    transition-delay: 6s;
+    -webkit-transition-delay: 6s;
+    -moz-transition-delay: 6s;
+    -o-transition-delay: 6s;
+}
+
+.about-div-begin {
+    transition: opacity 1s;
+    transition-delay: 7s;
+    -webkit-transition-delay: 7s;
+    -moz-transition-delay: 7s;
+    -o-transition-delay: 7s;
+}
+
+.about-header {
+    transition: opacity 1s;
+    transition-delay: 8s;
+    -webkit-transition-delay: 8s;
+    -moz-transition-delay: 8s;
+    -o-transition-delay: 8s;
+}
+
+.about-paragraph {
+    transition: opacity 1s;
+    transition-delay: 9s;
+    -webkit-transition-delay: 9s;
+    -moz-transition-delay: 9s;
+    -o-transition-delay: 9s;
+}
+
+.paragraph-line-one {
+    transition: opacity 1s;
+    transition-delay: 10s;
+    -webkit-transition-delay: 10s;
+    -moz-transition-delay: 10s;
+    -o-transition-delay: 10s;
+}
+
+.paragraph-line-two {
+    transition: opacity 1s;
+    transition-delay: 11s;
+    -webkit-transition-delay: 11s;
+    -moz-transition-delay: 11s;
+    -o-transition-delay: 11s;
+}
+
+.paragraph-line-three {
+    transition: opacity 1s;
+    transition-delay: 12s;
+    -webkit-transition-delay: 12s;
+    -moz-transition-delay: 12s;
+    -o-transition-delay: 12s;
+}
+
+.paragraph-line-four {
+    transition: opacity 1s;
+    transition-delay: 13s;
+    -webkit-transition-delay: 13s;
+    -moz-transition-delay: 13s;
+    -o-transition-delay: 13s;
+}
+
+.closing-paragraph {
+    transition: opacity 1s;
+    transition-delay: 14s;
+    -webkit-transition-delay: 14s;
+    -moz-transition-delay: 14s;
+    -o-transition-delay: 14s;
+}
+
+.closing-div {
+    transition: opacity 1s;
+    transition-delay: 15s;
+    -webkit-transition-delay: 15s;
+    -moz-transition-delay: 15s;
+    -o-transition-delay: 15s;
+}
+
+.closing-return {
+    transition: opacity 1s;
+    transition-delay: 16s;
+    -webkit-transition-delay: 16s;
+    -moz-transition-delay: 16s;
+    -o-transition-delay: 16s;
+}
+
+.closing-about {
+    transition: opacity 1s;
+    transition-delay: 17s;
+    -webkit-transition-delay: 17s;
+    -moz-transition-delay: 17s;
+    -o-transition-delay: 17s;
+}
+
+.exporting-about {
+    transition: opacity 1s;
+    transition-delay: 18s;
+    -webkit-transition-delay: 18s;
+    -moz-transition-delay: 18s;
+    -o-transition-delay: 18s;
+}
+
+.about-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes arrow {
+    0% {color: white; font-size: 1em;}
+    12.5% {font-size: 1.5em;}
+    20% {color: yellow;}
+    25% {font-size: 1em;}
+    37.5% {font-size: 1.5em;}
+    40% {color: rgb(80, 255, 120);}
+    50% {font-size: 1em;}
+    60% {color: rgb(80, 255, 255);}
+    62.5% {font-size: 1.5em;}
+    75% {font-size: 1em;}
+    80% {color:rgb(0, 120, 255);}
+    87.5% {font-size: 1.5em;}
+    100% {color: white; font-size: 1em;}
+}
+.scroll-arrow a {
+    
+    margin-left: 45vw;
+    text-align: center;
+    
+    color: transparent;
+    line-height: 0.1em;
+    animation-name: arrow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 22s;
+    cursor: default;
+}
+
+.scroll-arrow {
+    position: absolute;
+    display: block;
+    width: 40px;
+    margin: auto;
+    bottom: 7em;
+    left: 48%;
+}
+
+.scroll-arrow a {
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+span {
+    position: relative;
+}
+
+span p {
+    display: inline;
+    transition: font-size 1s, color 0.5s;
+    line-height: 1.2em;
+    font-size: 1.1em;;
+}
+
+span p:hover {
+    font-size: 1.25em;
+    color: orchid;
+    cursor: default;
+}
+
+.dark-blue-text {
+    color:rgb(0, 120, 255);
+}
+
+.light-blue-text {
+    color: rgb(140, 217, 252);
+}
+
+.white-text {
+    color: white;
+}
+
+.pink-text {
+    color: rgb(167, 57, 218);
+}
+
+.light-yellow-text {
+    color: rgb(250, 250, 186);
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+.grey-text {
+    color: grey;
+}
+
+.orange-text {
+    color: rgb(190, 102, 70);
+}
 @media screen and (min-width: 1250px) {
     #about {
         /* background-color: rgb(34, 34, 34);  */
