@@ -2,9 +2,10 @@
     position: relative;
     /* margin-top: -9.2em; */
     height: 100vh;
+    margin-top: 3em;
     margin-left: 0;
     width: 100vw;
-    overflow: hidden;
+    min-height: 100vh;
     /* background-color: grey; */
 }
 
@@ -28,27 +29,55 @@
 }
 
 .projects-header-wrapper h2:hover,
-.projects-wrapper h2:hover {
+.header-bracket-ending >  h2:hover {
     color: darkorchid;
     font-size: 3em;
 }
-.projects-grid {
+.projects {
     position: relative;
-    display: grid;
+    display: block;
+    flex-direction: column;
     grid-template-columns: 50% 50%;
-    top: 10em;
+    top: 5em;
     left: 0;
-    height: 70vh;
-    width: 60vw;
+    width: 95vw;
     margin: auto;
+}
+
+hr {
+    width: 90vw;
 }
 
 .project {
     justify-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header-bracket-ending {
+    position: relative;
+    display: block;
+    width: 1em;
+    margin-top: 15em;
+}
+
+.header-bracket-ending h2 {
+    text-align: left;
+    transition: color 1s, font-size 1s;
 }
 
 .project img {
-    height: 30vh;
-    width: 20vw;
+    height: 10em;
+    width: 15em;
     justify-self: center;
+    display: block ;
+    margin: auto;
+}
+
+@media (min-width: 700px) {
+    .project {
+        flex-direction: row;
+    }
 }
