@@ -16,6 +16,16 @@ const aboutContent = {
 };
 
 const About = () => {
+  const paragraph = [];
+
+  for (let character of aboutContent.paragraphText) {
+    paragraph.push(
+      <p key={paragraph.length} className="white-text">
+        {character}
+      </p>,
+    );
+  }
+
   useEffect(() => {
     const aboutPage = document.getElementById('about-page');
     aboutPage.classList.add('about-visible');
@@ -31,14 +41,14 @@ const About = () => {
     aboutHeader.classList.add('about-visible');
     const aboutParagraph = document.getElementById('about-paragraph');
     aboutParagraph.classList.add('about-visible');
-    const paragraphLineOne = document.getElementById('paragraph-line-one');
+    const paragraphLineOne = document.getElementById('paragraph');
     paragraphLineOne.classList.add('about-visible');
-    const paragraphLineTwo = document.getElementById('paragraph-line-two');
-    paragraphLineTwo.classList.add('about-visible');
-    const paragraphLineThree = document.getElementById('paragraph-line-three');
-    paragraphLineThree.classList.add('about-visible');
-    const paragraphLineFour = document.getElementById('paragraph-line-four');
-    paragraphLineFour.classList.add('about-visible');
+    // const paragraphLineTwo = document.getElementById('paragraph-line-two');
+    // paragraphLineTwo.classList.add('about-visible');
+    // const paragraphLineThree = document.getElementById('paragraph-line-three');
+    // paragraphLineThree.classList.add('about-visible');
+    // const paragraphLineFour = document.getElementById('paragraph-line-four');
+    // paragraphLineFour.classList.add('about-visible');
     const closingParagraph = document.getElementById('closing-paragraph');
     closingParagraph.classList.add('about-visible');
     const closingDiv = document.getElementById('closing-div');
@@ -50,6 +60,7 @@ const About = () => {
     const exportingAbout = document.getElementById('exporting-about');
     exportingAbout.classList.add('about-visible');
   }, []);
+
   return (
     <div id="about">
       <div className="about-page" id="about-page">
@@ -64,14 +75,11 @@ const About = () => {
           <p className="light-blue-text">{'{'}</p>{' '}
         </span>
         <span className="return-declaration" id="return-declaration">
-          <p className="pink-text">{aboutContent.tabSign}return </p>
+          <p className="pink-text">return </p>
           <p className="yellow-text">{'('}</p>
         </span>
         <span className="about-div-begin" id="about-div-begin">
-          <p className="grey-text">
-            {aboutContent.tabSign + aboutContent.tabSign}
-            {'<'}
-          </p>
+          <p className="grey-text">{'<'}</p>
           <p className="dark-blue-text">{'div '}</p>
           <p className="light-blue-text">className</p>
           <p className="white-text">=</p>
@@ -79,10 +87,7 @@ const About = () => {
           <p className="grey-text">{'>'}</p>
         </span>
         <span className="about-header" id="about-header">
-          <p className="grey-text">
-            {aboutContent.tabSign + aboutContent.tabSign + aboutContent.tabSign}
-            {'<'}
-          </p>
+          <p className="grey-text">{'<'}</p>
           <p className="dark-blue-text">h2</p>
           <p className="grey-text">{'>'}</p>
           <p className="white-text"> About Me </p>
@@ -91,76 +96,27 @@ const About = () => {
           <p className="grey-text">{'>'}</p>
         </span>
         <span className="about-paragraph" id="about-paragraph">
-          <p className="grey-text">
-            {aboutContent.tabSign + aboutContent.tabSign + aboutContent.tabSign}
-            {'<'}
-          </p>
+          <p className="grey-text">{'<'}</p>
           <p className="dark-blue-text">p</p>
           <p className="grey-text">{'>'}</p>
         </span>
-        <span className="paragraph-line-one" id="paragraph-line-one">
-          <p className="white-text">
-            {aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign}
-            My professional goal is to become a software developer. I’ve always
-            been interested in coding,
-          </p>
-        </span>
-        <span className="paragraph-line-two" id="paragraph-line-two">
-          <p className="white-text">
-            {aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign}
-            however I have never actually worked in IT. I am really dedicated to
-            learning and improving
-          </p>
-        </span>
-        <span className="paragraph-line-three" id="paragraph-line-three">
-          <p className="white-text">
-            {aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign}
-            my skills as well as expanding them. Also, if I’m stuck at
-            something, I’m not afraid to ask
-          </p>
-        </span>
-        <span className="paragraph-line-four" id="paragraph-line-four">
-          <p className="white-text">
-            {aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign +
-              aboutContent.tabSign}
-            more experienced people for help, if google, documentation and
-            Stackoverflow are not enough.
-          </p>
+        <span className="paragraph" id="paragraph">
+          {paragraph}
         </span>
         <span className="closing-paragraph" id="closing-paragraph">
-          <p className="grey-text">
-            {aboutContent.tabSign + aboutContent.tabSign + aboutContent.tabSign}
-            {'</'}
-          </p>
+          <p className="grey-text">{'</'}</p>
           <p className="dark-blue-text" id="dark-blue-text">
             p
           </p>
           <p className="grey-text">{'>'}</p>
         </span>
         <span className="closing-div" id="closing-div">
-          <p className="grey-text">
-            {aboutContent.tabSign + aboutContent.tabSign}
-            {'</'}
-          </p>
+          <p className="grey-text">{'</'}</p>
           <p className="dark-blue-text">div</p>
           <p className="grey-text">{'>'}</p>
         </span>
         <span className="closing-return" id="closing-return">
-          <p className="yellow-text">
-            {aboutContent.tabSign}
-            {')'}
-          </p>
+          <p className="yellow-text">{')'}</p>
         </span>
         <span className="closing-about" id="closing-about">
           <p className="light-blue-text">{'}'}</p>

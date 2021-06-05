@@ -2,7 +2,7 @@
     /* background-color: rgb(34, 34, 34);  */
     position: relative;
     top: 6em;
-    height: 100vh;
+    min-height: 90vh;
     width: 100vw;
 }
 
@@ -29,10 +29,7 @@
 .about-div-begin, 
 .about-header, 
 .about-paragraph, 
-.paragraph-line-one, 
-.paragraph-line-two, 
-.paragraph-line-three, 
-.paragraph-line-four, 
+.paragraph, 
 .closing-paragraph, 
 .closing-div, 
 .closing-return, 
@@ -44,85 +41,86 @@
 
 .about-function-declaration {
     transition: opacity 1s;
-    transition-delay: 5s;
-    -webkit-transition-delay: 5s;
-    -moz-transition-delay: 5s;
-    -o-transition-delay: 5s;
-}
-
-.return-declaration {
-    transition: opacity 1s;
     transition-delay: 6s;
     -webkit-transition-delay: 6s;
     -moz-transition-delay: 6s;
     -o-transition-delay: 6s;
 }
 
-.about-div-begin {
+.return-declaration {
     transition: opacity 1s;
     transition-delay: 7s;
     -webkit-transition-delay: 7s;
     -moz-transition-delay: 7s;
     -o-transition-delay: 7s;
+    margin-left: 2em;
 }
 
-.about-header {
+.about-div-begin {
     transition: opacity 1s;
     transition-delay: 8s;
     -webkit-transition-delay: 8s;
     -moz-transition-delay: 8s;
-    -o-transition-delay: 8s;
+    -o-transition-delay: 8;
+    margin-left: 3em;
 }
 
-.about-paragraph {
+.about-header {
     transition: opacity 1s;
     transition-delay: 9s;
     -webkit-transition-delay: 9s;
     -moz-transition-delay: 9s;
     -o-transition-delay: 9s;
+    margin-left: 4em;
 }
 
-.paragraph-line-one {
+.about-paragraph {
     transition: opacity 1s;
     transition-delay: 10s;
     -webkit-transition-delay: 10s;
     -moz-transition-delay: 10s;
     -o-transition-delay: 10s;
+    margin-left: 4em;
 }
 
-.paragraph-line-two {
+.paragraph {
     transition: opacity 1s;
     transition-delay: 11s;
     -webkit-transition-delay: 11s;
     -moz-transition-delay: 11s;
     -o-transition-delay: 11s;
+    margin-left: 5em;
 }
 
-.paragraph-line-three {
+
+.closing-paragraph {
     transition: opacity 1s;
     transition-delay: 12s;
     -webkit-transition-delay: 12s;
     -moz-transition-delay: 12s;
     -o-transition-delay: 12s;
+    margin-left: 4em;
 }
 
-.paragraph-line-four {
+.closing-div {
     transition: opacity 1s;
     transition-delay: 13s;
     -webkit-transition-delay: 13s;
     -moz-transition-delay: 13s;
     -o-transition-delay: 13s;
+    margin-left: 3em;
 }
 
-.closing-paragraph {
+.closing-return {
     transition: opacity 1s;
     transition-delay: 14s;
     -webkit-transition-delay: 14s;
     -moz-transition-delay: 14s;
     -o-transition-delay: 14s;
+    margin-left: 2em;
 }
 
-.closing-div {
+.closing-about {
     transition: opacity 1s;
     transition-delay: 15s;
     -webkit-transition-delay: 15s;
@@ -130,28 +128,12 @@
     -o-transition-delay: 15s;
 }
 
-.closing-return {
+.exporting-about {
     transition: opacity 1s;
     transition-delay: 16s;
     -webkit-transition-delay: 16s;
     -moz-transition-delay: 16s;
     -o-transition-delay: 16s;
-}
-
-.closing-about {
-    transition: opacity 1s;
-    transition-delay: 17s;
-    -webkit-transition-delay: 17s;
-    -moz-transition-delay: 17s;
-    -o-transition-delay: 17s;
-}
-
-.exporting-about {
-    transition: opacity 1s;
-    transition-delay: 18s;
-    -webkit-transition-delay: 18s;
-    -moz-transition-delay: 18s;
-    -o-transition-delay: 18s;
 }
 
 .about-visible {
@@ -184,7 +166,7 @@
     animation-name: arrow;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-delay: 22s;
+    animation-delay: 18s;
     cursor: default;
 }
 
@@ -208,11 +190,20 @@ span {
 
 span p {
     display: inline;
-    transition: font-size 1s, color 0.5s;
+    transition: font-size 0.3s, color 0.2s;
     line-height: 1.2em;
-    font-size: 1.1em;;
+    font-size: 1.1em;
 }
 
+span p:nth-child(4n + 1):hover {
+    color: chartreuse;
+}
+span p:nth-child(4n + 2):hover {
+    color: rgb(206, 18, 80);
+}
+span p:nth-child(4n + 3):hover {
+    color: rgb(24, 209, 200);
+}
 span p:hover {
     font-size: 1.25em;
     color: orchid;
@@ -254,7 +245,7 @@ span p:hover {
     #about {
         /* background-color: rgb(34, 34, 34);  */
         position: relative;
-        top: -9.2em;
+        top: 0;
         height: 100vh;
         width: 100vw;
         overflow: hidden;
@@ -262,11 +253,10 @@ span p:hover {
 
     .about-page {
         position: relative;
-        top: 13em;
+        top: 2em;
         left: 10vw;
         background-color: transparent;
         width: 70vw;
-        height: 20em;
         color: rgb(0, 120, 255);
         text-align: center;
         justify-content: center;
@@ -274,147 +264,11 @@ span p:hover {
         flex-direction: column;
         text-align: left;
         padding: 2em 2em 2em 2em;
-        border: 1px solid lightgray;
         transition: opacity 1s;
         transition-delay: 5s;
         -webkit-transition-delay: 5s;
         -moz-transition-delay: 5s;
         -o-transition-delay: 5s;
-    }
-
-    .about-function-declaration, 
-    .return-declaration, 
-    .about-div-begin, 
-    .about-header, 
-    .about-paragraph, 
-    .paragraph-line-one, 
-    .paragraph-line-two, 
-    .paragraph-line-three, 
-    .paragraph-line-four, 
-    .closing-paragraph, 
-    .closing-div, 
-    .closing-return, 
-    .closing-about, 
-    .exporting-about,
-    .about-page {
-        opacity: 0;
-    }
-
-    .about-function-declaration {
-        transition: opacity 1s;
-        transition-delay: 7s;
-        -webkit-transition-delay: 7s;
-        -moz-transition-delay: 7s;
-        -o-transition-delay: 7s;
-    }
-
-    .return-declaration {
-        transition: opacity 1s;
-        transition-delay: 8s;
-        -webkit-transition-delay: 8s;
-        -moz-transition-delay: 8s;
-        -o-transition-delay: 8s;
-    }
-
-    .about-div-begin {
-        transition: opacity 1s;
-        transition-delay: 9s;
-        -webkit-transition-delay: 9s;
-        -moz-transition-delay: 9s;
-        -o-transition-delay: 9s;
-    }
-
-    .about-header {
-        transition: opacity 1s;
-        transition-delay: 10s;
-        -webkit-transition-delay: 10s;
-        -moz-transition-delay: 10s;
-        -o-transition-delay: 10s;
-    }
-
-    .about-paragraph {
-        transition: opacity 1s;
-        transition-delay: 11s;
-        -webkit-transition-delay: 11s;
-        -moz-transition-delay: 11s;
-        -o-transition-delay: 11s;
-    }
-
-    .paragraph-line-one {
-        transition: opacity 1s;
-        transition-delay: 12s;
-        -webkit-transition-delay: 12s;
-        -moz-transition-delay: 12s;
-        -o-transition-delay: 12s;
-    }
-
-    .paragraph-line-two {
-        transition: opacity 1s;
-        transition-delay: 13s;
-        -webkit-transition-delay: 13s;
-        -moz-transition-delay: 13s;
-        -o-transition-delay: 13s;
-    }
-
-    .paragraph-line-three {
-        transition: opacity 1s;
-        transition-delay: 14s;
-        -webkit-transition-delay: 14s;
-        -moz-transition-delay: 14s;
-        -o-transition-delay: 14s;
-    }
-
-    .paragraph-line-four {
-        transition: opacity 1s;
-        transition-delay: 15s;
-        -webkit-transition-delay: 15s;
-        -moz-transition-delay: 15s;
-        -o-transition-delay: 15s;
-    }
-
-    .closing-paragraph {
-        transition: opacity 1s;
-        transition-delay: 16s;
-        -webkit-transition-delay: 16s;
-        -moz-transition-delay: 16s;
-        -o-transition-delay: 16s;
-    }
-
-    .closing-div {
-        transition: opacity 1s;
-        transition-delay: 17s;
-        -webkit-transition-delay: 17s;
-        -moz-transition-delay: 17s;
-        -o-transition-delay: 17s;
-    }
-
-    .closing-return {
-        transition: opacity 1s;
-        transition-delay: 18s;
-        -webkit-transition-delay: 18s;
-        -moz-transition-delay: 18s;
-        -o-transition-delay: 18s;
-    }
-
-    .closing-about {
-        transition: opacity 1s;
-        transition-delay: 19s;
-        -webkit-transition-delay: 19s;
-        -moz-transition-delay: 19s;
-        -o-transition-delay: 19s;
-    }
-
-    .exporting-about {
-        transition: opacity 1s;
-        transition-delay: 20s;
-        -webkit-transition-delay: 20s;
-        -moz-transition-delay: 20s;
-        -o-transition-delay: 20s;
-    }
-
-    .about-visible {
-        visibility: visible;
-        opacity: 1;
     }
 
     @keyframes arrow {
@@ -442,7 +296,7 @@ span p:hover {
         animation-name: arrow;
         animation-duration: 8s;
         animation-iteration-count: infinite;
-        animation-delay: 22s;
+        animation-delay: 18s;
         cursor: default;
     }
 
@@ -468,11 +322,11 @@ span p:hover {
         display: inline;
         transition: font-size 1s, color 0.5s;
         line-height: 1.2em;
-        font-size: 1.1em;;
+        font-size: 2vh;;
     }
 
     span p:hover {
-        font-size: 1.25em;
+        font-size: 1.5em;
         color: orchid;
         cursor: default;
     }
