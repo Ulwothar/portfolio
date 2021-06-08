@@ -35,7 +35,6 @@
         position: fixed;
         top: -83px;
         width: 100vw;
-        height: 100vh;
         margin-left: -100vw;
         z-index: 5;
         transition: margin-left 1s;
@@ -89,14 +88,14 @@ nav hr {
     height: 25px;
 }
 
-@media  screen and (min-width: 1250px) {
+@media  screen and (min-width: 900px) {
     .hamburger {
         display: none;
     }
     .main-navigation {
         position: sticky;
         position: -webkit-sticky;
-        top: 0;
+        top: 50px;
         margin-left: 0;
         width: 70vw;
         z-index: 5;
@@ -106,6 +105,7 @@ nav hr {
         -webkit-transition-delay: 4s;
         -moz-transition-delay: 4s;
         -o-transition-delay: 4s;
+        /* border: 3px solid green; */
     }
 
     .main-navigation hr {
@@ -123,7 +123,7 @@ nav hr {
     flex-direction: row;
     padding-top: 1em;
     height: 3em;
-    margin-top: 5.2em;
+    margin-top: 8em;
     border-radius: 0 0 15px 0;
     background-color: rgba(75, 75, 75, 0.5);
     list-style: none;
@@ -157,4 +157,10 @@ nav hr {
     position: relative;
     display: inline;
     margin: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-navigation {
+        width: 90vw;
+    }
 }

@@ -121,7 +121,7 @@ const About = () => {
         <span className="closing-about" id="closing-about">
           <p className="light-blue-text">{'}'}</p>
         </span>
-        <p> </p>
+        <p className="empty-paragraph"> </p>
         <span className="exporting-about" id="exporting-about">
           <p className="pink-text">export default </p>
           <p className="light-yellow-text">About</p>
