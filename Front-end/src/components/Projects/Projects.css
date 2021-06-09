@@ -31,11 +31,10 @@
 .projects-header-wrapper h2:hover,
 .header-bracket-ending >  h2:hover {
     color: darkorchid;
-    font-size: 3em;
 }
 .projects {
     position: relative;
-    display: block;
+    display: flex;
     flex-direction: column;
     grid-template-columns: 50% 50%;
     top: 5em;
@@ -56,6 +55,15 @@ hr {
     gap: 1em;
 }
 
+.project-left {
+    width: 100%;
+}
+
+.project-right {
+    width: 100%;
+    position: relative;
+}
+
 .header-bracket-ending {
     position: relative;
     display: block;
@@ -68,7 +76,7 @@ hr {
     transition: color 1s, font-size 1s;
 }
 
-.project img {
+.project-logo {
     height: 10em;
     width: 15em;
     justify-self: center;
@@ -76,8 +84,114 @@ hr {
     margin: auto;
 }
 
-@media (min-width: 700px) {
+.tech-wrapper {
+    margin: 2em;
+}
+
+.tech-logo {
+    width: 5em;
+    vertical-align: middle;
+    margin: 2em auto 2em auto;
+}
+
+.project-links {
+    position: relative;
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-links > p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-links a {
+    text-decoration: none;
+    justify-self: center;
+}
+
+@media (min-width: 900px) {
     .project {
         flex-direction: row;
+        width: 75%;
+        margin: auto;
+    }
+
+    .project p {
+        font-size: 1em;
+    }
+
+    .project-logo {
+        width: 90%;
+        height: auto;
+    }
+    .project-links {
+        position: absolute;
+        bottom: 1em;
+    }
+}
+
+@media (min-width: 1250px) {
+    .projects-header-wrapper h2 {
+        font-size: 3em;
+    }
+    .projects {
+        gap: 2em;
+    }
+    .project {
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+        gap: 2em;
+    }
+
+    .project p {
+        font-size: 1em;
+    }
+
+    .project-logo {
+        width: 90%;
+        height: auto;
+    }
+
+    
+}
+
+@media (min-width: 1800px) {
+    .projects-header-wrapper h2 {
+        font-size: 3.5em;
+    }
+    .projects {
+        gap: 2em;
+    }
+    .project {
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+        gap: 2em;
+    }
+    
+
+    .project p {
+        font-size: 1.5em;
+    }
+
+    .project-logo {
+        width: 90%;
+        height: auto;
+    }
+
+    .tech-wrapper {
+        margin: 4em;
+    }
+    
+    .tech-logo {
+        width: 10em;
+        vertical-align: middle;
+        margin-left: 1em;
     }
 }
