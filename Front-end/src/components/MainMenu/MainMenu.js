@@ -49,9 +49,13 @@ const MainMenu = () => {
         </li>
         <hr></hr>
         <li onClick={addChangeClass}>
-          <NavLink to="/" exact>
+          <NavHashLink
+            to="#footer"
+            activeClassName="selected"
+            smooth="true"
+            activeStyle={{ color: 'red' }}>
             Contact Me()
-          </NavLink>
+          </NavHashLink>
         </li>
         <hr></hr>
         <li onClick={addChangeClass}>

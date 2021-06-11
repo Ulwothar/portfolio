@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import './About.css';
+import CodeText from '../../shared/components/CodeText';
 
 const aboutContent = {
   sectionTag: '<div className="about-page">',
@@ -11,7 +12,7 @@ const aboutContent = {
   paragraphTag: '<p>',
   closingParagraphTag: '</P>',
   paragraphText:
-    'My professional goal is to become a software developer. I’ve always been interested in coding, however I have never actually worked in IT. I am really dedicated to learning and improving my skills as well as expanding them. Also, if I’m stuck at something, I’m not afraid to ask more experienced people for help, if google, documentation and Stackoverflow are not enough.',
+    "Hi, it's really good to see you here! My name is Mateusz and I am an aspiring fullstack developer. I am really dedicated to learning and improving my skills as well as expanding them. Also, if I’m stuck at something, I’m not afraid to ask more experienced people for help if google, documentation and Stackoverflow are not enough. Aside from that I am a quick learner and good problem-solver with keen attention to detail. Always expect more from myself and I work hard to achieve both company's and my personal goals.",
   tabSign: '\u00A0 \u00A0 ',
 };
 
@@ -43,12 +44,6 @@ const About = () => {
     aboutParagraph.classList.add('about-visible');
     const paragraphLineOne = document.getElementById('paragraph');
     paragraphLineOne.classList.add('about-visible');
-    // const paragraphLineTwo = document.getElementById('paragraph-line-two');
-    // paragraphLineTwo.classList.add('about-visible');
-    // const paragraphLineThree = document.getElementById('paragraph-line-three');
-    // paragraphLineThree.classList.add('about-visible');
-    // const paragraphLineFour = document.getElementById('paragraph-line-four');
-    // paragraphLineFour.classList.add('about-visible');
     const closingParagraph = document.getElementById('closing-paragraph');
     closingParagraph.classList.add('about-visible');
     const closingDiv = document.getElementById('closing-div');
@@ -62,9 +57,9 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about">
+    <section id="about">
       <div className="about-page" id="about-page">
-        <span
+        {/* <span
           className="about-function-declaration"
           id="about-function-declaration">
           <p className="dark-blue-text">const </p>
@@ -126,7 +121,8 @@ const About = () => {
           <p className="pink-text">export default </p>
           <p className="light-yellow-text">About</p>
           <p className="white-text">{' ;'}</p>
-        </span>
+        </span> */}
+        <CodeText about="true" />
       </div>
       <div className="scroll-arrow">
         <NavHashLink to="#projects" smooth="true">
@@ -134,7 +130,7 @@ const About = () => {
           <p>\/</p>
         </NavHashLink>
       </div>
-    </div>
+    </section>
   );
 };
 

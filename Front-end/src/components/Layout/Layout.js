@@ -5,6 +5,7 @@ import MainHeader from '../MainHeader/MainHeader';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import MainMenu from '../MainMenu/MainMenu';
+import Contact from '../Contact/Contact';
 
 const Layout = (props) => {
   return (
@@ -14,6 +15,7 @@ const Layout = (props) => {
         <MainMenu />
         <About />
         <Projects />
+        <Contact />
       </div>
     </div>
   );
