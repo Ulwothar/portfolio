@@ -13,6 +13,7 @@ import JsImage from '../../images/javascript.png';
 import LinkedInImage from '../../images/linkedIn.png';
 import GitHubImage from '../../images/github.png';
 import CodeText from '../../shared/components/CodeText';
+import SendMail from './sendMail';
 
 let newForm = {
   email: '',
@@ -35,6 +36,7 @@ const Contact = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     alert('Thank you for contacting me, I will reply as soon as I can.');
+    SendMail(contactForm);
     console.log(contactForm);
     event.target.reset();
   };
