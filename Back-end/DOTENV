@@ -1,0 +1,7 @@
+#change this file name to .env
+
+#credentials for email used in portfolio app:
+HOST=
+PORT=
+USER=
+PASSWORD=
