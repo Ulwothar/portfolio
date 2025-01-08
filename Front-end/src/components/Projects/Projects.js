@@ -203,36 +203,32 @@ const Projects = () => {
             <div className="tech-wrapper">
               <img src={ReactImage} alt="React js logo" className="tech-logo" />
               <img src={NodeImage} alt="Node js logo" className="tech-logo" />
+              <img
+                src={ExpressImage}
+                alt="Express js logo"
+                className="tech-logo"
+              />
             </div>
           </div>
           <div className="project-right">
             <div className="project-content-wrapper">
               <p className="white-text">
-                {'\u00A0 \u00A0'}This portfolio page was created using Node and
-                React js. At this moment it's front-end site only, but api is in
-                development and will be added shortly.
+                {'\u00A0 \u00A0'}This portfolio page was created using React js
+                for front-end and Node / Express js for back-end. It is still
+                early in development, but I have already learned a lot while
+                making it.
               </p>
               <p className="white-text">
                 {'\u00A0 \u00A0'}Even though it's just a portfolio page, I've
                 put effort for it to be fully responsive and look just as well
                 on both desktop and mobile devices. I have also used transitions
                 and aminations to make this site look a little more appealing.
+                More than that, the contact form below was built with the use of
+                nodemailer module without redirecting to any third party sites.
               </p>
             </div>
             <div className="project-links">
-              <div>
-                <a
-                  href="http://cc.mattkrp.co.uk/api-docs"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="external-link">
-                  <span>
-                    <p className="grey-text">{'<'}</p>
-                    <p className="dark-blue-text">LIVE_SITE</p>
-                    <p className="grey-text">{'>'}</p>
-                  </span>
-                </a>
-              </div>
+              <div></div>
               <div>
                 <a
                   href="https://github.com/Ulwothar/portfolio"

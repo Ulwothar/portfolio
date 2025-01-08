@@ -13,7 +13,7 @@ const SendMail = (req, res, next) => {
     port: process.env.PORT,
     secure: false,
     auth: {
-      user: process.env.USER,
+      user: process.env.USERNAME,
       pass: process.env.PASSWORD,
     },
     tls: {
@@ -21,20 +21,11 @@ const SendMail = (req, res, next) => {
     },
   });
 
-  // verify connection configuration
-  transporter.verify(function (error, success) {
-    if (error) {
-      console.log({ verificationError: error });
-    } else {
-      console.log('Server is ready to take our messages');
-    }
-  });
-
   console.log({
     envVariables: {
       host: process.env.HOST,
       port: process.env.PORT,
-      user: process.env.USER,
+      user: process.env.USERNAME,
       secure: process.env.SECURE,
       password: process.env.PASSWORD,
     },
@@ -48,13 +39,13 @@ const SendMail = (req, res, next) => {
 
   const receiveMailOptions = {
     from: `${name} <${email}>`,
-    to: process.env.USER,
+    to: process.env.USERNAME,
     subject: subject,
     text: message,
   };
 
   const sendConfirmationMailOptions = {
-    from: process.env.USER,
+    from: process.env.USERNAME,
     to: `${name} <${email}>`,
     subject: sendConfirmationMail.subject,
     html: sendConfirmationMail.message,

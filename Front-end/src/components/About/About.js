@@ -21,7 +21,7 @@ const About = () => {
 
   for (let character of aboutContent.paragraphText) {
     paragraph.push(
-      <p key={paragraph.length} className="white-text">
+      <p key={paragraph.length} className='white-text'>
         {character}
       </p>,
     );
@@ -57,8 +57,8 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
-      <div className="about-page" id="about-page">
+    <section id='about'>
+      <div className='about-page' id='about-page'>
         {/* <span
           className="about-function-declaration"
           id="about-function-declaration">
@@ -122,10 +122,10 @@ const About = () => {
           <p className="light-yellow-text">About</p>
           <p className="white-text">{' ;'}</p>
         </span> */}
-        <CodeText about="true" />
+        <CodeText about='true' />
       </div>
-      <div className="scroll-arrow">
-        <NavHashLink to="#projects" smooth="true">
+      <div className='scroll-arrow'>
+        <NavHashLink to='#projects' smooth='true'>
           <p> {' ||'}</p>
           <p>\/</p>
         </NavHashLink>
