@@ -2,7 +2,7 @@ const SendMail = async (props) => {
   const { name, email, subject, message } = props;
   try {
     //replace localhost address with your server's address for production
-    await fetch('http://localhost:5005/email', {
+    await fetch('https://portfolio.mattkrp.co.uk/email', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
@@ -11,7 +11,15 @@ const SendMail = async (props) => {
         subject: subject,
         message: message,
       }),
-    });
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((result) => {
+        if (result) {
+          console.log(result);
+        }
+      });
   } catch (error) {
     console.log(error);
   }

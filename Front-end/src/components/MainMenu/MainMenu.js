@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import './MainMenu.css';
+import MyCV from '../../utils/MateuszKrupaCV.pdf';
 
 const MainMenu = () => {
   let nav;
@@ -59,9 +60,9 @@ const MainMenu = () => {
         </li>
         <hr></hr>
         <li onClick={addChangeClass}>
-          <NavLink to="/" exact>
+          <a href={MyCV} target="_blank" rel="noreferrer">
             CV()
-          </NavLink>
+          </a>
         </li>
         {/* <li onClick={addChangeClass}>
           <div className="image-link">
